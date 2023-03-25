@@ -1,0 +1,1219 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/donae/ontologies/2023/2/menu/"
+     xml:base="http://www.semanticweb.org/donae/ontologies/2023/2/menu/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:menu="http://www.semanticweb.org/donae/ontologies/2023/2/menu#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/donae/ontologies/2023/2/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Contiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Contiene">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Difficolta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Difficolta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Link -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Link">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Prezzo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Prezzo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Sapore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Sapore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Temperatura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Temperatura">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#dieta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dieta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dieta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dieta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dieta"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne">
+        <menu:Nome>carne</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Cioccolata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Cioccolata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>cioccolata</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>crema</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>frutta</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Latte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Latte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>latte</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Legumi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Legumi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>legumi</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>pasta</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>pesce</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Orecchiette-alla-crema-di-broccoli-zucca-e-melagrana.html</menu:Link>
+        <menu:Nome>Orecchiette alla crema di broccoli zucca e melagrana</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Pollo-al-limone.html</menu:Link>
+        <menu:Nome>Pollo al limone</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://www.tavolartegusto.it/ricetta/torta-di-mele-vegan-senza-uova/</menu:Link>
+        <menu:Nome>Torte di mele Vegan</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Cioccolata"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Torta-tenerina.html</menu:Link>
+        <menu:Nome>Torta Tenerina</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Torta-mimosa-senza-glutine.html</menu:Link>
+        <menu:Nome>Torta mimosa senza glutine</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Cioccolata"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Budino-cacao-e-cannella-senza-lattosio.html</menu:Link>
+        <menu:Nome>Budino cacao e cannella senza lattosio</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Temperatura>freddo</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Tiramisu.html</menu:Link>
+        <menu:Nome>TIramisu</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Temperatura>freddo</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Insalata-di-riso-venere.html</menu:Link>
+        <menu:Nome>Insalata di riso venere</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Riso-al-curry.html</menu:Link>
+        <menu:Nome>Riso al curry</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>piccante</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Riso-venere-con-code-di-mazzancolle.html</menu:Link>
+        <menu:Nome>Riso venere con code di mazzancolle</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso"/>
+        <menu:Difficolta>media</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Riso-venere-ai-frutti-di-mare.html</menu:Link>
+        <menu:Nome>Riso venere ai frutti di mare</menu:Nome>
+        <menu:Prezzo>alto</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Latte"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Spaghetti-ricotta-e-spinaci.html</menu:Link>
+        <menu:Nome>Spagehtti ricotta e spinaci</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Insalata-di-riso-alla-marinara.html</menu:Link>
+        <menu:Nome>Insalata di riso alla marinara</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura"/>
+        <menu:Difficolta>media</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Penne-ai-cinque-cavoli.html</menu:Link>
+        <menu:Nome>Penne ai cinque cavoli</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Sedani-rigati-alla-crema-di-carciofi.html</menu:Link>
+        <menu:Nome>sedani rigati alla crema di carciofi</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Fideua.html</menu:Link>
+        <menu:Nome>Fideuà</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Pasta-tonno-e-piselli.html</menu:Link>
+        <menu:Nome>Pasta tonno e piselli</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Spaghetti-con-colatura-di-alici-e-pomodorini.html</menu:Link>
+        <menu:Nome>Spaghetti con colatura di alici e pomodorini</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Paella-alla-valenciana.html</menu:Link>
+        <menu:Nome>Paella alla valenciana</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Latte"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Risotto-allo-Zafferano.html</menu:Link>
+        <menu:Nome>Risotto allo Zafferano</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Latte"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Pasta-al-forno-senza-glutine.html</menu:Link>
+        <menu:Nome>Pasta al forno senza glutine</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Legumi"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Polpette-di-fagioli-cannellini.html</menu:Link>
+        <menu:Nome>Polpette di fagioli cannellini</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto31">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Arrosto-di-vitello-al-forno-con-patate.html</menu:Link>
+        <menu:Nome>Arrosto di vitello al forno con patate</menu:Nome>
+        <menu:Prezzo>alto</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto32">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Coniglio-alla-Ligure.html</menu:Link>
+        <menu:Nome>Coniglio alla Ligure</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto36 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto36">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Polpettine-di-tonno-e-ricotta.html</menu:Link>
+        <menu:Nome>Polpettine di tonno e ricotta</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto37">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Anguilla-in-crosta-di-mandorle.html</menu:Link>
+        <menu:Nome>Anguilla in crosta di mandorle</menu:Nome>
+        <menu:Prezzo>alto</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto38 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto38">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Latte"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Polpette-di-spinaci-e-ricotta.html</menu:Link>
+        <menu:Nome>Polpette di spinaci  e ricotta</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto39 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto39">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Sformato-di-verdure.html</menu:Link>
+        <menu:Nome>Sformato di verdure</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Spaghetti-alle-vongole.html</menu:Link>
+        <menu:Nome>Spaghetti alle vongole</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto40">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Cotolette-di-spinaci.html</menu:Link>
+        <menu:Nome>Cotolette di spinaci</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto41 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto41">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Zucca-ripiena.html</menu:Link>
+        <menu:Nome>Zucca ripiena</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto42 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto42">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Legumi"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Uova"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Uova-e-piselli.html</menu:Link>
+        <menu:Nome>Uova e piselli</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto43 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto43">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Legumi"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Cotolette-vegetariane.html</menu:Link>
+        <menu:Nome>Cotolette vegetariane</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto44 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto44">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Legumi"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Frittata-al-forno-ai-ceci.html</menu:Link>
+        <menu:Nome>Frittata al forno ai ceci</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto45 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto45">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Spiedini-di-pollo-piccanti.html</menu:Link>
+        <menu:Nome>Spiedini di pollo piccanti</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>piccante</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto46 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto46">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Nome>Spaghetti aglio olio e peperoncino</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>https://ricette.giallozafferano.it/Spaghetti-aglio-olio-e-peperoncino.html</menu:Sapore>
+        <menu:Sapore>piccante</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto47 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto47">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Tiramisu-vegan.html</menu:Link>
+        <menu:Nome>Tiramisu vegan</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Temperatura>freddo</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto48 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto48">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Crema-al-latte-di-cocco.html</menu:Link>
+        <menu:Nome>Crema al latte di cocco</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto49 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto49">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Meringa-svizzera.html</menu:Link>
+        <menu:Nome>Meringa svizzera</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Uova"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Spaghetti-alla-Carbonara.html</menu:Link>
+        <menu:Nome>Pasta alla Carbonara</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto50">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Semifreddo-alle-fragole.html</menu:Link>
+        <menu:Nome>Semifreddo alle fragole</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Temperatura>freddo</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto51 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto51">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Cioccolata"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Sacher-senza-glutine.html</menu:Link>
+        <menu:Nome>Sacher senza glutine</menu:Nome>
+        <menu:Prezzo>alto</menu:Prezzo>
+        <menu:Temperatura>freddo</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto52 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto52">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Zenzero-candito.html</menu:Link>
+        <menu:Nome>Zenzero candito</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto53 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto53">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Delizie-al-limone.html</menu:Link>
+        <menu:Nome>Delizie al limone</menu:Nome>
+        <menu:Prezzo>alto</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto54 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto54">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Cioccolata"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Torta-Savoia.html</menu:Link>
+        <menu:Nome>Torta Savoia</menu:Nome>
+        <menu:Prezzo>alto</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto55 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto55">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Cioccolata"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Bomboloni-al-forno.html</menu:Link>
+        <menu:Nome>Bomboloni al forno</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto56 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto56">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Frutta"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Rotolo-alle-fragole.html</menu:Link>
+        <menu:Nome>Rotolo alle fragole</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Temperatura>freddo</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto57 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto57">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Zabaione.html</menu:Link>
+        <menu:Nome>Zabaione</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto58 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto58">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Fiocchi-di-neve.html</menu:Link>
+        <menu:Nome>Fiocchi di neve</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Temperatura>normale</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto59 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto59">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#dessert"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Crema"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Cannoli-siciliani.html</menu:Link>
+        <menu:Nome>Cannoli siciliani</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Temperatura>freddo</menu:Temperatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Legumi"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Felafel-Falafel.html</menu:Link>
+        <menu:Nome>Falafel</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto60">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pasta"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Lasagne-vegane.html</menu:Link>
+        <menu:Nome>Lasagne vegane</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Legumi"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Uova"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Hamburger-di-ceci.html</menu:Link>
+        <menu:Nome>Hamburger di Ceci</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Cosce-di-pollo-al-forno.html</menu:Link>
+        <menu:Nome>Cosce di pollo al forno</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>piccante</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Piatto9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Carne"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>Spezzatino di vitello con patate</menu:Link>
+        <menu:Link>https://ricette.giallozafferano.it/Spezzatino-di-vitello-con-patate.html</menu:Link>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>forte</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>riso</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Uova -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Uova">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Difficolta>uova</menu:Difficolta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#ingrediente"/>
+        <menu:Nome>verdura</menu:Nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#primopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Riso"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Risotto-alle-mazzancolle.html</menu:Link>
+        <menu:Nome>Risotto alle mazzancolle</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto29">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#vegano"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Verdura"/>
+        <menu:Difficolta>media</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Polpettone-di-melanzane.html</menu:Link>
+        <menu:Nome>Polpettone di melanzane</menu:Nome>
+        <menu:Prezzo>basso</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto33">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>medio</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Branzino-al-forno.html</menu:Link>
+        <menu:Nome>Branzino al forno</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto34 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto34">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>difficile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Sgombro-con-cime-di-rapa-e-nocciole.html</menu:Link>
+        <menu:Nome>Sgombro con cime di rapa e nocciole</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>leggero</menu:Sapore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/donae/ontologies/2023/2/menu#piatto35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#noglutine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#nolattosio"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#secondopiatto"/>
+        <menu:Contiene rdf:resource="http://www.semanticweb.org/donae/ontologies/2023/2/menu#Pesce"/>
+        <menu:Difficolta>facile</menu:Difficolta>
+        <menu:Link>https://ricette.giallozafferano.it/Gamberoni-al-forno.html</menu:Link>
+        <menu:Nome>Gamberoni al forno</menu:Nome>
+        <menu:Prezzo>medio</menu:Prezzo>
+        <menu:Sapore>medio</menu:Sapore>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
